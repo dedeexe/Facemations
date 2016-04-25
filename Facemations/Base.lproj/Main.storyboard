@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Facemations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Xo-SE-oAa">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="617"/>
+                                <connections>
+                                    <segue destination="m4k-79-rcB" kind="embed" identifier="faceTrackerEmbed" id="VWe-NF-jXP"/>
+                                </connections>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LxH-IA-jbB">
+                                <rect key="frame" x="-4" y="617" width="383" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kQ-Hc-Ud5">
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="50"/>
+                                        <state key="normal" title="Glass"/>
+                                        <connections>
+                                            <action selector="insertRemoveGlass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdX-g4-o1h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrF-R4-fvG">
+                                        <rect key="frame" x="192" y="0.0" width="192" height="50"/>
+                                        <state key="normal" title="Nose"/>
+                                        <connections>
+                                            <action selector="insertRemoveNose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76d-m2-eAr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gy6-p6-GnU"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="LxH-IA-jbB" secondAttribute="trailing" constant="-20" id="HmT-gu-vUC"/>
+                            <constraint firstItem="4Xo-SE-oAa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="M0h-Ov-D37"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Xo-SE-oAa" secondAttribute="trailing" constant="-20" id="dox-hj-Cgz"/>
+                            <constraint firstItem="4Xo-SE-oAa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="nkz-NB-fIZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LxH-IA-jbB" secondAttribute="bottom" id="sTX-rO-CWI"/>
+                            <constraint firstItem="LxH-IA-jbB" firstAttribute="top" secondItem="4Xo-SE-oAa" secondAttribute="bottom" id="weV-ci-h2v"/>
+                            <constraint firstItem="LxH-IA-jbB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zVv-pE-TWj"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339.5" y="429.5"/>
+        </scene>
+        <!--Face Tracker View Controller-->
+        <scene sceneID="KS3-nD-U1c">
+            <objects>
+                <viewController id="m4k-79-rcB" customClass="FaceTrackerViewController" customModule="FaceTracker" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pux-g3-8gh"/>
+                        <viewControllerLayoutGuide type="bottom" id="vHp-zu-bX5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nkQ-98-Ufr">
+                        <rect key="frame" x="0.0" y="0.0" width="383" height="617"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Llh-bN-ohD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339.5" y="1262.5"/>
+        </scene>
+    </scenes>
+</document>
