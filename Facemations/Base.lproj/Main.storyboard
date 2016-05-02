@@ -28,24 +28,38 @@
                                 <rect key="frame" x="-4" y="617" width="383" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kQ-Hc-Ud5">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="50"/>
                                         <state key="normal" title="Glass"/>
                                         <connections>
                                             <action selector="insertRemoveGlass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdX-g4-o1h"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AX2-eh-tCK">
+                                        <rect key="frame" x="77" y="0.0" width="77" height="50"/>
+                                        <state key="normal" title="Cat"/>
+                                        <connections>
+                                            <action selector="insertCatEyes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PwB-PE-tV4"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrF-R4-fvG">
-                                        <rect key="frame" x="128" y="0.0" width="128" height="50"/>
+                                        <rect key="frame" x="153" y="0.0" width="77" height="50"/>
                                         <state key="normal" title="Nose"/>
                                         <connections>
                                             <action selector="insertRemoveNose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76d-m2-eAr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UL-57-KIm">
-                                        <rect key="frame" x="256" y="0.0" width="128" height="50"/>
+                                        <rect key="frame" x="230" y="0.0" width="77" height="50"/>
                                         <state key="normal" title="Pig Nose"/>
                                         <connections>
                                             <action selector="insertPigNose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tM1-Ys-S57"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrv-rX-bZo">
+                                        <rect key="frame" x="307" y="0.0" width="77" height="50"/>
+                                        <state key="normal" title="H Nose"/>
+                                        <connections>
+                                            <action selector="insertHumanNose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ldz-ez-S1t"/>
                                         </connections>
                                     </button>
                                 </subviews>

@@ -1,19 +1,21 @@
 //
-//  Accessory.swift
+//  HumanNose.swift
 //  Facemations
 //
-//  Created by dede.exe on 24/04/16.
+//  Created by dede.exe on 01/05/16.
 //  Copyright © 2016 dede.exe. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import FaceTracker
+import QuartzCore
 
-public class JohnLennonGlassAccessory: GlassAccessory
+
+public class HumanAccessory: NoseAccessory
 {
     init()
     {
-        super.init(imageNamed: "glass-john-lennon")
+        super.init(imageNamed: "human-nose")
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -27,19 +29,17 @@ public class JohnLennonGlassAccessory: GlassAccessory
     public override func updatePosition()
     {
         super.updatePosition()
-
-        let width = eyesCornerDistance * 1.3
-        let height = (imageSize.height / imageSize.width) * width
+        
+        let width = noseCornerDistance * 1.5
+        let height = width
         
         self.transform = CGAffineTransformIdentity
-        self.frame = CGRect(x: eyesCenter.x,
-                            y: eyesCenter.y,
+        self.frame = CGRect(x: noseCenter.x - width / 2,
+                            y: noseCenter.y - height / 1.3,
                             width: width,
                             height: height)
         
-        self.center = eyesCenter
-        
-        self.transform = CGAffineTransformMakeRotation(eyesAngulation)
+        self.transform = CGAffineTransformMakeRotation(noseAngulation)
         
     }
     

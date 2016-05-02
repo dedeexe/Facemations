@@ -1,19 +1,20 @@
 //
-//  Accessory.swift
+//  CatEyesAccessory.swift
 //  Facemations
 //
-//  Created by dede.exe on 24/04/16.
+//  Created by dede.exe on 02/05/16.
 //  Copyright © 2016 dede.exe. All rights reserved.
 //
+
 
 import UIKit
 import FaceTracker
 
-public class JohnLennonGlassAccessory: GlassAccessory
+public class CatEyesAccessory: GlassAccessory
 {
     init()
     {
-        super.init(imageNamed: "glass-john-lennon")
+        super.init(imageNamed: "cat-eyes")
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -27,8 +28,8 @@ public class JohnLennonGlassAccessory: GlassAccessory
     public override func updatePosition()
     {
         super.updatePosition()
-
-        let width = eyesCornerDistance * 1.3
+        
+        let width = eyesCornerDistance * 2.0
         let height = (imageSize.height / imageSize.width) * width
         
         self.transform = CGAffineTransformIdentity
@@ -38,6 +39,8 @@ public class JohnLennonGlassAccessory: GlassAccessory
                             height: height)
         
         self.center = eyesCenter
+        self.frame.origin.y -= 30
+        
         
         self.transform = CGAffineTransformMakeRotation(eyesAngulation)
         

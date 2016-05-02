@@ -75,6 +75,24 @@ extension ViewController {
         }
     }
     
+
+    @IBAction func insertCatEyes(sender:UIButton)
+    {
+        sender.selected = !sender.selected
+        
+        if sender.selected {
+            accessories.append(CatEyesAccessory())
+            return
+        }
+        
+        for (index, acessory) in accessories.enumerate() {
+            if acessory is GlassAccessory {
+                accessories.removeAtIndex(index)
+                return
+            }
+        }
+    }
+    
     
     @IBAction func insertRemoveNose(sender:UIButton)
     {
@@ -99,6 +117,23 @@ extension ViewController {
         
         if sender.selected {
             accessories.append(PigNoseAccessory())
+            return
+        }
+        
+        for (index, acessory) in accessories.enumerate() {
+            if acessory is NoseAccessory {
+                accessories.removeAtIndex(index)
+                return
+            }
+        }
+    }
+    
+    @IBAction func insertHumanNose(sender:UIButton)
+    {
+        sender.selected = !sender.selected
+        
+        if sender.selected {
+            accessories.append(HumanAccessory())
             return
         }
         
