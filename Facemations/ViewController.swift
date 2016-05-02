@@ -92,6 +92,23 @@ extension ViewController {
             }
         }
     }
+    
+    @IBAction func insertPigNose(sender:UIButton)
+    {
+        sender.selected = !sender.selected
+        
+        if sender.selected {
+            accessories.append(PigNoseAccessory())
+            return
+        }
+        
+        for (index, acessory) in accessories.enumerate() {
+            if acessory is NoseAccessory {
+                accessories.removeAtIndex(index)
+                return
+            }
+        }
+    }
 }
 
 

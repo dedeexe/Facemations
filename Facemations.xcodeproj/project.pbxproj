@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E22BE82B1CCDCAA100ABB5C3 /* ClownNose.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BE82A1CCDCAA100ABB5C3 /* ClownNose.swift */; };
+		E245DDFA1CD6F50200E74977 /* PigNose.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245DDF91CD6F50200E74977 /* PigNose.swift */; };
+		E245DDFC1CD6F6F600E74977 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E245DDFB1CD6F6F600E74977 /* CoreGraphics.framework */; };
+		E245DDFE1CD6F96D00E74977 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E245DDFD1CD6F96D00E74977 /* QuartzCore.framework */; };
 		E2EDA65D1CCD74F700C9F4C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDA65C1CCD74F700C9F4C1 /* AppDelegate.swift */; };
 		E2EDA65F1CCD74F700C9F4C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDA65E1CCD74F700C9F4C1 /* ViewController.swift */; };
 		E2EDA6621CCD74F700C9F4C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EDA6601CCD74F700C9F4C1 /* Main.storyboard */; };
@@ -57,6 +60,9 @@
 
 /* Begin PBXFileReference section */
 		E22BE82A1CCDCAA100ABB5C3 /* ClownNose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClownNose.swift; sourceTree = "<group>"; };
+		E245DDF91CD6F50200E74977 /* PigNose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PigNose.swift; sourceTree = "<group>"; };
+		E245DDFB1CD6F6F600E74977 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E245DDFD1CD6F96D00E74977 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E2EDA6591CCD74F700C9F4C1 /* Facemations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facemations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EDA65C1CCD74F700C9F4C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2EDA65E1CCD74F700C9F4C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E245DDFE1CD6F96D00E74977 /* QuartzCore.framework in Frameworks */,
+				E245DDFC1CD6F6F600E74977 /* CoreGraphics.framework in Frameworks */,
 				E2EDA68B1CCD762700C9F4C1 /* FaceTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +115,8 @@
 		E2EDA6501CCD74F700C9F4C1 = {
 			isa = PBXGroup;
 			children = (
+				E245DDFD1CD6F96D00E74977 /* QuartzCore.framework */,
+				E245DDFB1CD6F6F600E74977 /* CoreGraphics.framework */,
 				E2EDA68A1CCD762700C9F4C1 /* FaceTracker.framework */,
 				E2EDA65B1CCD74F700C9F4C1 /* Facemations */,
 				E2EDA6701CCD74F700C9F4C1 /* FacemationsTests */,
@@ -182,6 +192,7 @@
 			children = (
 				E2EDA6991CCDC3B600C9F4C1 /* NoseAccessory.swift */,
 				E22BE82A1CCDCAA100ABB5C3 /* ClownNose.swift */,
+				E245DDF91CD6F50200E74977 /* PigNose.swift */,
 			);
 			name = Noses;
 			sourceTree = "<group>";
@@ -320,6 +331,7 @@
 			files = (
 				E2EDA65F1CCD74F700C9F4C1 /* ViewController.swift in Sources */,
 				E2EDA6951CCD9D4F00C9F4C1 /* GlassAccessory.swift in Sources */,
+				E245DDFA1CD6F50200E74977 /* PigNose.swift in Sources */,
 				E22BE82B1CCDCAA100ABB5C3 /* ClownNose.swift in Sources */,
 				E2EDA65D1CCD74F700C9F4C1 /* AppDelegate.swift in Sources */,
 				E2EDA69A1CCDC3B600C9F4C1 /* NoseAccessory.swift in Sources */,
